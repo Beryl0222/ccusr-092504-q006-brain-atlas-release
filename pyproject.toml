@@ -1,0 +1,8 @@
+[project]
+name = "brain-atlas-release"
+version = "0.1.0"
+description = "脑图谱研究资产发布台领域契约"
+requires-python = ">=3.11"
+
+[tool.unittest]
+start-directory = "tests"

@@ -1,0 +1,9 @@
+{
+  "event_id": "092504-006-sample-001",
+  "event_type": "CONSENT_REGISTERED",
+  "aggregate_type": "donor_record",
+  "aggregate_id": "brain_atlas_release-001",
+  "occurred_at": "2026-09-24T12:00:00+08:00",
+  "version": 1,
+  "summary": "已登记一条可供联调的领域事实"
+}
