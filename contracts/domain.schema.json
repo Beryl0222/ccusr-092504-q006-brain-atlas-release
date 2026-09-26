@@ -20,9 +20,17 @@
       "type": "string",
       "enum": [
         "CONSENT_REGISTERED",
+        "CONSENT_WITHDRAWN",
+        "SAMPLE_DEIDENTIFIED",
         "BATCH_QUALITY_REVIEWED",
+        "SEQUENCE_FILE_VERIFIED",
+        "CELL_QC_COMPLETED",
         "ANNOTATION_APPROVED",
+        "ANNOTATION_ADJUDICATED",
+        "COHORT_MEMBERSHIP_CHANGED",
+        "ANALYSIS_SHARD_RECORDED",
         "ANALYSIS_COMPLETED",
+        "FIGURE_APPROVED",
         "PACKAGE_RELEASED"
       ]
     },
@@ -30,8 +38,14 @@
       "type": "string",
       "enum": [
         "donor_record",
+        "biospecimen_sample",
         "biospecimen_batch",
+        "sequencing_file",
+        "cell_qc_result",
+        "cell_annotation",
+        "cohort_definition",
         "analysis_run",
+        "paper_figure",
         "release_package"
       ]
     },
