@@ -20,18 +20,48 @@
       "type": "string",
       "enum": [
         "CONSENT_REGISTERED",
+        "CONSENT_SCOPE_UPDATED",
+        "CONSENT_WITHDRAWN",
+        "SAMPLE_DERIVED",
+        "BATCH_PREPARED",
         "BATCH_QUALITY_REVIEWED",
+        "SEQUENCING_FILE_REGISTERED",
+        "SEQUENCING_CHECKSUM_VERIFIED",
+        "SEQUENCING_CHECKSUM_FAILED",
+        "CELL_QC_RECORDED",
+        "QC_THRESHOLD_CHANGED",
+        "ANNOTATION_SUBMITTED",
+        "ANNOTATION_CONFLICT_RAISED",
         "ANNOTATION_APPROVED",
+        "COHORT_DEFINED",
+        "SAMPLE_INCLUDED",
+        "SAMPLE_EXCLUDED",
+        "ANALYSIS_STARTED",
+        "ANALYSIS_SHARD_COMPLETED",
         "ANALYSIS_COMPLETED",
-        "PACKAGE_RELEASED"
+        "ANALYSIS_SUPERSEDED",
+        "FINDING_RECORDED",
+        "FINDING_CORRECTED",
+        "FIGURE_APPROVED",
+        "PACKAGE_ASSEMBLED",
+        "PACKAGE_RELEASED",
+        "PACKAGE_REVISION_PUBLISHED",
+        "PACKAGE_NOTIFICATION_SENT"
       ]
     },
     "aggregate_type": {
       "type": "string",
       "enum": [
         "donor_record",
+        "deidentified_sample",
         "biospecimen_batch",
+        "sequencing_file",
+        "cell_qc_result",
+        "cell_annotation",
+        "cohort",
         "analysis_run",
+        "research_finding",
+        "paper_figure",
         "release_package"
       ]
     },
@@ -48,6 +78,10 @@
       "minimum": 1
     },
     "summary": {
+      "type": "string",
+      "minLength": 1
+    },
+    "causation_id": {
       "type": "string",
       "minLength": 1
     }
